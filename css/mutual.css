@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+header {
+  background-color: #a431b7;
+  top: 0;
+}
+header nav ul {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: right;
+  gap: 20px;
+  font-size: 0.8rem;
+  list-style: none;
+}
+main {
+  background-color: #ed85cf;
+}
