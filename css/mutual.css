@@ -10,13 +10,22 @@ header {
 header nav ul {
   display: flex;
   flex-flow: wrap;
-  justify-content: right;
+  justify-content: center;
   gap: 20px;
   font-size: 0.8rem;
   list-style: none;
   font-family: "Orbitron", sans-serif;
   font-weight: lighter;
 }
+#logo_knap {
+  background-image: url(logo.svg);
+  background-size: cover;
+  aspect-ratio: 161.61/160.02;
+  max-width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 html {
   background-color: #ed85cf;
 }
@@ -29,6 +38,10 @@ h2 {
   font-weight: lighter;
   font-size: 1.3rem;
 }
+p {
+  font-family: "Arvo", serif;
+  font-size: 1rem;
+}
 @media (min-width: 800px) {
   h1 {
     font-family: "Orbitron", sans-serif;
@@ -37,5 +50,16 @@ h2 {
   h2 {
     font-family: "Orbitron", sans-serif;
     font-weight: lighter;
+  }
+  .logo {
+    background-image: url(logo.svg);
+    background-size: cover;
+    aspect-ratio: 161.61/160.02;
+    max-width: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header nav ul {
+    font-size: 1.3rem;
   }
 }
