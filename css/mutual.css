@@ -17,14 +17,9 @@ header nav ul {
   font-family: "Orbitron", sans-serif;
   font-weight: lighter;
 }
-/* #logo_knap {
-  background-image: url(logo.svg);
-  background-size: cover;
-  aspect-ratio: 161.61/160.02;
-  max-width: 10%;
-  margin-left: auto;
-  margin-right: auto;
-} */
+strong {
+  background-color: yellow;
+}
 
 html {
   background-color: #ed85cf;
@@ -32,15 +27,40 @@ html {
 h1 {
   font-family: "Orbitron", sans-serif;
   font-size: 1.5rem;
+  color: rgb(245, 245, 169);
 }
 h2 {
   font-family: "Orbitron", sans-serif;
   font-weight: lighter;
   font-size: 1.3rem;
 }
-p {
+h3 {
+  font-family: "Orbitron", sans-serif;
+  font-weight: lighter;
+  font-size: 1rem;
+}
+p,
+address {
   font-family: "Arvo", serif;
   font-size: 1rem;
+}
+.logo {
+  display: grid;
+  place-content: center;
+}
+footer {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  opacity: 0.5;
+  padding: 20px;
+  position: relative;
+}
+a {
+  color: rgb(108, 26, 150);
+}
+a:hover {
+  color: yellow;
 }
 @media (min-width: 800px) {
   h1 {
@@ -51,14 +71,6 @@ p {
     font-family: "Orbitron", sans-serif;
     font-weight: lighter;
   }
-  /* .logo {
-    background-image: url(logo.svg);
-    background-size: cover;
-    aspect-ratio: 161.61/160.02;
-    max-width: 5%;
-    margin-left: auto;
-    margin-right: auto;
-  } */
   header nav ul {
     font-size: 1.3rem;
   }

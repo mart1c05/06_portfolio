@@ -1,9 +1,11 @@
-main {
+.background {
   width: 100%;
   height: 100vh;
   background-image: url(background.svg);
   background-size: cover;
   background-position: 70% 80%;
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 
 /* Grundlæggende Web */
@@ -11,11 +13,11 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 50px 1fr;
-  padding: 30px;
 }
 #first_section h1 {
-  grid-template-columns: 1/2;
-  grid-template-rows: 1/2;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  text-align: center;
 }
 
 #first_section .container_1 {
@@ -23,6 +25,7 @@ main {
   border-radius: 25px;
   grid-column: 1/4;
   grid-row: 2/3;
+  margin: 20px;
 }
 #first_section .container_1_text {
   padding: 30px;
@@ -35,6 +38,7 @@ main {
   grid-column: 1/3;
   grid-row: 3/4;
   margin-top: 50px;
+  margin: 20px;
 }
 #first_section .container_3 {
   background-image: url(web_mobile.jpg);
@@ -46,6 +50,7 @@ main {
   grid-row: 3/4;
   box-shadow: 1px 1px 20px 2px black;
   margin-top: 30px;
+  margin: 20px;
 }
 #first_section .container_4 {
   background-image: url(web_skitse.jpg);
@@ -55,6 +60,7 @@ main {
   grid-column: 1/3;
   grid-row: 4/5;
   margin-top: 50px;
+  margin: 20px;
 }
 #first_section .container_5 {
   background-image: url(web_moodboard_splashbillede.jpg);
@@ -64,6 +70,7 @@ main {
   grid-column: 1/3;
   grid-row: 5/6;
   margin-top: 50px;
+  margin: 20px;
 }
 #first_section .container_6 {
   background-image: url(web_moodboard.jpg);
@@ -73,6 +80,7 @@ main {
   grid-column: 1/3;
   grid-row: 6/7;
   margin-top: 50px;
+  margin: 20px;
 }
 #first_section .container_7 {
   background-image: url(web_styletile.jpg);
@@ -82,9 +90,14 @@ main {
   grid-column: 1/3;
   grid-row: 7/8;
   margin-top: 50px;
+  margin: 20px;
 }
 
 @media (min-width: 800px) {
+  .background {
+    grid-column: 1/6;
+    grid-row: 1/2;
+  }
   #first_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 50px;
@@ -102,7 +115,7 @@ main {
   }
   #first_section .container_1_text {
     padding: 30px;
-    max-width: 400px;
+    max-width: 550px;
     line-height: 1.4rem;
   }
 
@@ -165,7 +178,6 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 50px 1fr;
-  padding: 30px;
 }
 #second_section h1 {
   grid-template-columns: 1/2;
@@ -177,6 +189,7 @@ main {
   border-radius: 25px;
   grid-column: 1/2;
   grid-row: 2/3;
+  margin: 20px;
 }
 #second_section .container_1_text {
   padding: 30px;
@@ -189,6 +202,7 @@ main {
   grid-column: 1/2;
   grid-row: 3/4;
   margin-top: 50px;
+  margin: 20px;
 }
 #second_section .container_3 {
   background-image: url(ux_solution_sketch2.jpg);
@@ -198,6 +212,7 @@ main {
   grid-column: 1/2;
   grid-row: 4/5;
   margin-top: 50px;
+  margin: 20px;
 }
 #second_section .container_4 {
   background-image: url(ux_moodboard.jpg);
@@ -207,6 +222,7 @@ main {
   grid-column: 1/2;
   grid-row: 5/6;
   margin-top: 50px;
+  margin: 20px;
 }
 #second_section .container_5 {
   background-image: url(ux_styletile.jpg);
@@ -216,6 +232,7 @@ main {
   grid-column: 1/2;
   grid-row: 6/7;
   margin-top: 50px;
+  margin: 20px;
 }
 #second_section .container_6 {
   background-image: url(ux_styletile2.jpg);
@@ -225,6 +242,7 @@ main {
   grid-column: 1/2;
   grid-row: 7/8;
   margin-top: 50px;
+  margin: 20px;
 }
 
 @media (min-width: 800px) {
@@ -283,8 +301,7 @@ main {
 #third_section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 1fr 1fr;
-  padding: 30px;
+  grid-template-rows: 50px 1fr;
 }
 #third_section h1 {
   grid-template-columns: 1/2;
@@ -294,8 +311,9 @@ main {
 #third_section .container_1 {
   background-color: pink;
   border-radius: 25px;
-  grid-column: 1/4;
+  grid-column: 1/3;
   grid-row: 2/3;
+  margin: 20px;
 }
 #third_section .container_1_text {
   padding: 30px;
@@ -308,27 +326,26 @@ main {
   grid-column: 1/3;
   grid-row: 3/4;
   margin-top: 50px;
+  margin: 20px;
 }
 
 @media (min-width: 800px) {
   #third_section {
     display: grid;
-    grid-template-columns: 1fr 1fr 100px 100px 100px;
-    grid-template-rows: 50px 150px 150px 150px 150px;
-  }
-  #third_section h1 {
-    grid-template-columns: 1/2;
-    grid-template-rows: 2/3;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   #third_section .container_1 {
     background-color: pink;
     border-radius: 25px;
-    grid-column: 1/5;
-    grid-row: 2/5;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
   }
   #third_section .container_1_text {
     padding: 30px;
-    max-width: 400px;
+    grid-column: 1/2;
   }
 
   #third_section .container_2 {
@@ -337,16 +354,14 @@ main {
     aspect-ratio: 2850/1426;
     border-radius: 50px;
     grid-column: 2/4;
-    grid-row: 2/3;
-    max-width: 100%;
+    grid-row: 1/2;
   }
 }
 /* Grunlæggende Indhold */
 #fourth_section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 50px 1fr 1fr;
-  padding: 30px;
+  grid-template-rows: 50px 1fr;
 }
 #fourth_section h1 {
   grid-template-columns: 1/2;
@@ -358,6 +373,7 @@ main {
   border-radius: 25px;
   grid-column: 1/4;
   grid-row: 2/3;
+  margin: 20px;
 }
 #fourth_section .container_1_text {
   padding: 30px;
@@ -370,6 +386,7 @@ main {
   grid-column: 1/3;
   grid-row: 3/4;
   margin-top: 50px;
+  margin: 20px;
 }
 #fourth_section .container_3 {
   background-image: url(indhold_mobile.jpg);
@@ -381,6 +398,7 @@ main {
   grid-row: 3/4;
   box-shadow: 1px 1px 20px 2px black;
   margin-top: 30px;
+  margin: 20px;
 }
 
 @media (min-width: 800px) {
