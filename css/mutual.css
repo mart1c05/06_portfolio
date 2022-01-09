@@ -50,16 +50,42 @@ address {
 }
 footer {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   place-content: center;
   text-align: center;
   opacity: 0.5;
   padding: 20px;
-  position: relative;
 }
+footer .mail {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+footer .kmail {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  border-left: 1px solid yellow;
+  border-right: 1px solid yellow;
+}
+footer .telefon {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
 a {
   color: rgb(108, 26, 150);
 }
 a:hover {
+  color: yellow;
+}
+button {
+  background-color: transparent;
+  border-color: transparent;
+  font-family: "Orbitron", sans-serif;
+  color: rgb(108, 26, 150);
+  margin-top: 10px;
+}
+button:hover {
   color: yellow;
 }
 @media (min-width: 800px) {

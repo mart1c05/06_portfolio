@@ -7,6 +7,9 @@
   grid-column: 1/3;
   grid-row: 1/2;
 }
+.portfolio {
+  border-bottom: 1px solid yellow;
+}
 
 /* Grundlæggende Web */
 #first_section {
@@ -14,14 +17,9 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 50px 1fr;
 }
-#first_section h1 {
-  grid-column: 1/3;
-  grid-row: 1/2;
-  text-align: center;
-}
 
 #first_section .container_1 {
-  background-color: pink;
+  border: 2px solid rgba(245, 245, 169, 0.473);
   border-radius: 25px;
   grid-column: 1/4;
   grid-row: 2/3;
@@ -103,13 +101,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 50px;
     grid-template-rows: 50px 1fr;
   }
-  #first_section h1 {
-    grid-template-columns: 1/2;
-    grid-template-rows: 2/3;
-  }
   #first_section .container_1 {
-    background-color: pink;
-    border-radius: 25px;
     grid-column: 1/6;
     grid-row: 2/7;
   }
@@ -185,7 +177,7 @@
 }
 
 #second_section .container_1 {
-  background-color: pink;
+  border: 2px solid rgba(245, 245, 169, 0.473);
   border-radius: 25px;
   grid-column: 1/2;
   grid-row: 2/3;
@@ -253,17 +245,14 @@
   }
 
   #second_section .container_1 {
-    background-color: pink;
-    border-radius: 25px;
     grid-column: 1/4;
     grid-row: 1/7;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
   }
   #second_section .container_1_text {
-    padding: 30px;
-    grid-column: 3/4;
+    grid-column: 3/5;
   }
 
   #second_section .container_2 {
@@ -277,23 +266,23 @@
   }
   #second_section .container_3 {
     grid-column: 1/2;
-    grid-row: 2/3;
-    margin-top: 50px;
-  }
-  #second_section .container_4 {
-    grid-column: 2/3;
-    grid-row: 3/4;
+    grid-row: 4/5;
     margin: 10px;
     margin-top: 50px;
   }
+  #second_section .container_4 {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-top: 50px;
+  }
   #second_section .container_5 {
-    grid-column: 1/2;
+    grid-column: 2/3;
     grid-row: 4/5;
     margin-top: 50px;
   }
   #second_section .container_6 {
-    grid-column: 2/3;
-    grid-row: 5/6;
+    grid-column: 3/4;
+    grid-row: 4/5;
     margin-top: 50px;
   }
 }
@@ -309,7 +298,7 @@
 }
 
 #third_section .container_1 {
-  background-color: pink;
+  border: 2px solid rgba(245, 245, 169, 0.473);
   border-radius: 25px;
   grid-column: 1/3;
   grid-row: 2/3;
@@ -336,8 +325,6 @@
     grid-template-rows: 1fr;
   }
   #third_section .container_1 {
-    background-color: pink;
-    border-radius: 25px;
     grid-column: 1/4;
     grid-row: 1/2;
     display: grid;
@@ -369,7 +356,7 @@
 }
 
 #fourth_section .container_1 {
-  background-color: pink;
+  border: 2px solid rgba(245, 245, 169, 0.473);
   border-radius: 25px;
   grid-column: 1/4;
   grid-row: 2/3;
@@ -409,8 +396,6 @@
   }
 
   #fourth_section .container_1 {
-    background-color: pink;
-    border-radius: 25px;
     grid-column: 1/6;
     grid-row: 2/5;
     display: grid;
