@@ -98,11 +98,11 @@
   #first_section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 50px;
-    grid-template-rows: 50px 20 1fr 1fr 1fr 1fr 50px;
+    grid-template-rows: 50px 20px 1fr 50px;
   }
   #first_section .container_1 {
     grid-column: 1/6;
-    grid-row: 1/8;
+    grid-row: 1/7;
   }
   #first_section .container_1_text {
     padding: 30px;
