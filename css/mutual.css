@@ -114,6 +114,7 @@ link:hover {
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
+  font-family: "Orbitron", sans-serif;
 }
 
 #myBtn:hover {
