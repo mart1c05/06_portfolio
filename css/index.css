@@ -116,7 +116,7 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
-#second_section .sprite_5 h2 {
+#second_section .sprite_5 a {
   grid-row: 2/3;
 }
 @media (min-width: 650px) {
